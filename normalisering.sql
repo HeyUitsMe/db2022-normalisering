@@ -37,15 +37,27 @@ SELECT DISTINCT Id, SUBSTRING_INDEX(Name, ' ', 1), SUBSTRING_INDEX(Name, ' ', -1
 FROM UNF;
 
 DROP TABLE IF EXISTS School;
-CREATE TABLE School AS SELECT DISTINCT 0 As Id, School As Name, City FROM UNF;
+CREATE TABLE School AS SELECT DISTINCT 0 As SchoolId, School As Name, City FROM UNF;
 
 SET @id = 0;
 
-UPDATE School SET Id =  (SELECT @id := @id + 1);
+UPDATE School SET SchoolId =  (SELECT @id := @id + 1);
 
-ALTER TABLE School ADD PRIMARY KEY(Id);
+ALTER TABLE School ADD PRIMARY KEY(SchoolId);
 
-ALTER TABLE School MODIFY COLUMN Id Int AUTO_INCREMENT;
+ALTER TABLE School MODIFY COLUMN SchoolId Int AUTO_INCREMENT;
 
 INSERT INTO School(Name, City) values ('Rimas Skola','Solna');
+
+
+CREATE TABLE StudentSchool AS SELECT DISTINCT UNF.Id, School.SchoolId 
+from UNF INNER JOIN School ON UNF.School = School.Name;
+
+ALTER TABLE StudentSchool ADD PRIMARY KEY(Id, SchoolId);
+
+SELECT Id, FirstName, LastName FROM Student
+JOIN StudentSchool USING (Id);
+
+ALTER TABLE StudentSchool MODIFY COLUMN Id Int AUTO_INCREMENT;
+
 
