@@ -36,3 +36,10 @@ INSERT INTO Student (ID, FirstName, LastName)
 SELECT DISTINCT Id, SUBSTRING_INDEX(Name, ' ', 1), SUBSTRING_INDEX(Name, ' ', -1) 
 FROM UNF;
 
+DROP TABLE IF EXISTS School;
+CREATE TABLE School AS SELECT DISTINCT 0 As SchoolId, School As Name, City FROM UNF;
+
+UPDATE School SET SchoolId =  (SELECT @id := @id + 1);
+
+ALTER TABLE School ADD PRIMARY KEY(SchoolId);
+ALTER TABLE School MODIFY COLUMN Name Int AUTO_INCREMENT;
