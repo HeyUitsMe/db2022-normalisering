@@ -49,6 +49,7 @@ ALTER TABLE School MODIFY COLUMN SchoolId Int AUTO_INCREMENT;
 
 INSERT INTO School(Name, City) values ('Rimas Skola','Solna');
 
+DROP TABLE IF EXISTS StudentSchool;
 
 CREATE TABLE StudentSchool AS SELECT DISTINCT UNF.Id, School.SchoolId 
 from UNF INNER JOIN School ON UNF.School = School.Name;
