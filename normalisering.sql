@@ -41,7 +41,7 @@ CREATE TABLE School AS SELECT DISTINCT 0 As Id, School As Name, City FROM UNF;
 
 SET @id = 0;
 
-UPDATE School SET SchoolId =  (SELECT @id := @id + 1);
+UPDATE School SET Id =  (SELECT @id := @id + 1);
 
 ALTER TABLE School ADD PRIMARY KEY(Id);
 
