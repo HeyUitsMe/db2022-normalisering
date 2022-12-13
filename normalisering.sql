@@ -49,16 +49,16 @@ ALTER TABLE School MODIFY COLUMN SchoolId Int AUTO_INCREMENT;
 
 INSERT INTO School(Name, City) values ('Rimas Skola','Solna');
 
+
 DROP TABLE IF EXISTS StudentSchool;
 
 CREATE TABLE StudentSchool AS SELECT DISTINCT UNF.Id, School.SchoolId 
 from UNF INNER JOIN School ON UNF.School = School.Name;
 
-ALTER TABLE StudentSchool ADD PRIMARY KEY(Id, SchoolId);
+ALTER TABLE StudentSchool ADD PRIMARY KEY(Id);
 
 SELECT Id, FirstName, LastName FROM Student
 JOIN StudentSchool USING (Id);
 
-ALTER TABLE StudentSchool MODIFY COLUMN Id Int AUTO_INCREMENT;
 
 
