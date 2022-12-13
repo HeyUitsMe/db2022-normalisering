@@ -32,20 +32,20 @@ CREATE TABLE Student (
     CONSTRAINT PRIMARY KEY (Id)
     )  ENGINE=INNODB;
 
-INSERT INTO Student (ID, FirstName, LastName) 
+INSERT INTO Student (Id, FirstName, LastName) 
 SELECT DISTINCT Id, SUBSTRING_INDEX(Name, ' ', 1), SUBSTRING_INDEX(Name, ' ', -1) 
 FROM UNF;
 
 DROP TABLE IF EXISTS School;
-CREATE TABLE School AS SELECT DISTINCT 0 As SchoolId, School As Name, City FROM UNF;
+CREATE TABLE School AS SELECT DISTINCT 0 As Id, School As Name, City FROM UNF;
 
 SET @id = 0;
 
 UPDATE School SET SchoolId =  (SELECT @id := @id + 1);
 
-ALTER TABLE School ADD PRIMARY KEY(SchoolId);
+ALTER TABLE School ADD PRIMARY KEY(Id);
 
-ALTER TABLE School MODIFY COLUMN SchoolId Int AUTO_INCREMENT;
+ALTER TABLE School MODIFY COLUMN Id Int AUTO_INCREMENT;
 
 INSERT INTO School(Name, City) values ('Rimas Skola','Solna');
 
