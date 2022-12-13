@@ -12,8 +12,7 @@ CREATE TABLE `UNF` (
     `HomePhone` VARCHAR(15),
     `JobPhone` VARCHAR(15),
     `MobilePhone1` VARCHAR(15),
-    `MobilePhone2` VARCHAR(15),
-    CONSTRAINT PRIMARY KEY (Id)
+    `MobilePhone2` VARCHAR(15)
 )  ENGINE=INNODB;
 
 LOAD DATA INFILE '/var/lib/mysql-files/denormalized-data.csv'
@@ -36,6 +35,7 @@ CREATE TABLE Student (
 INSERT INTO Student (Id, FirstName, LastName) 
 SELECT DISTINCT Id, SUBSTRING_INDEX(Name, ' ', 1), SUBSTRING_INDEX(Name, ' ', -1) 
 FROM UNF;
+
 
 DROP TABLE IF EXISTS School;
 CREATE TABLE School AS SELECT DISTINCT 0 As SchoolId, School As Name, City FROM UNF;
