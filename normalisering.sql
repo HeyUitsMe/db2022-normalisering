@@ -12,7 +12,8 @@ CREATE TABLE `UNF` (
     `HomePhone` VARCHAR(15),
     `JobPhone` VARCHAR(15),
     `MobilePhone1` VARCHAR(15),
-    `MobilePhone2` VARCHAR(15)
+    `MobilePhone2` VARCHAR(15),
+    CONSTRAINT PRIMARY KEY (Id)
 )  ENGINE=INNODB;
 
 LOAD DATA INFILE '/var/lib/mysql-files/denormalized-data.csv'
