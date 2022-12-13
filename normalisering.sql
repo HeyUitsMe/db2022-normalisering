@@ -39,7 +39,13 @@ FROM UNF;
 DROP TABLE IF EXISTS School;
 CREATE TABLE School AS SELECT DISTINCT 0 As SchoolId, School As Name, City FROM UNF;
 
+SET @id = 0;
+
 UPDATE School SET SchoolId =  (SELECT @id := @id + 1);
 
 ALTER TABLE School ADD PRIMARY KEY(SchoolId);
-ALTER TABLE School MODIFY COLUMN Name Int AUTO_INCREMENT;
+
+ALTER TABLE School MODIFY COLUMN SchoolId Int AUTO_INCREMENT;
+
+INSERT INTO School(Name, City) values ('Rimas Skola','Solna');
+
