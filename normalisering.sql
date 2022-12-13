@@ -60,5 +60,6 @@ ALTER TABLE StudentSchool ADD PRIMARY KEY(Id, SchoolId);
 SELECT Id, FirstName, LastName FROM Student
 JOIN StudentSchool USING (Id);
 
+ SELECT Id, FirstName, LastName, Name, City FROM Student JOIN StudentSchool USING (Id)  JOIN School USING (SchoolId);
 
 
