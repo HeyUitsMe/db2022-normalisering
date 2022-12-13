@@ -55,7 +55,7 @@ DROP TABLE IF EXISTS StudentSchool;
 CREATE TABLE StudentSchool AS SELECT DISTINCT UNF.Id, School.SchoolId 
 from UNF INNER JOIN School ON UNF.School = School.Name;
 
-ALTER TABLE StudentSchool ADD PRIMARY KEY(Id);
+ALTER TABLE StudentSchool ADD PRIMARY KEY(Id, SchoolId);
 
 SELECT Id, FirstName, LastName FROM Student
 JOIN StudentSchool USING (Id);
