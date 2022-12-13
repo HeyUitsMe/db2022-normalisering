@@ -1,3 +1,5 @@
+USE iths;
+
 DROP TABLE IF EXISTS StudentSchool;
 
 CREATE TABLE StudentSchool AS SELECT DISTINCT UNF.Id, School.SchoolId
