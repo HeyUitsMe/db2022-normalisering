@@ -7,6 +7,8 @@ from UNF INNER JOIN School ON UNF.School = School.Name;
 
 ALTER TABLE StudentSchool ADD PRIMARY KEY(Id, SchoolId);
 
+ALTER TABLE StudentSchool MODIFY COLUMN Id INT;
+
 SELECT Id, FirstName, LastName FROM Student
 JOIN StudentSchool USING (Id);
 
