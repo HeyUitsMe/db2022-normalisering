@@ -1,0 +1,43 @@
+Id,Name,Grade,Hobbies,City,School,HomePhone,JobPhone,MobilePhone1,MobilePhone2
+23.0,Linn Andersson,Awesome,Jogging,Västerås,Mälardalens Högskola,0595-7927179,,0548-1975561,0178-5909729
+28.0,Nasir Resch,First class,Nothing,Umeå,Umeå Universitet,047-8908839,0946-1998655,0805-5959730,0268-2989213
+17.0,Jonathan Lindqvist,Awesome,"Singing, Walking, Sunning",Stockholm,Stockholm University,0315-1933713,071-7904970,021-7915616,0412-1945176
+34.0,Sally Mann,Awesome,,Västerås,Mälardalens Högskola,,0871-1979440,0572-8905487,
+13.0,Helena Östlund,Admirable,"Singing, Walking, Sunning",Västerås,Mälardalens Högskola,066-2919097,0534-6937310,0110-966954,0197-3969615
+12.0,Hans Davidsson,Gorgetus,,Stockholm,Stockholm University,05-5959069,0818-7904145,01-2977881,
+1.0,Ali Tedros,First-class,"Singing, Walking, Sunning",Stockholm,Stockholm University,0716-6961131,0531-5905338,0453-7947628,
+37.0,Therese Lindquist,Firstclass,Nothing,Västerås,Mälardalens Högskola,0657-8973258,0138-966904,0273-5979705,0378-6937473
+8.0,Denize Muhamad,Awesome,"Singing, Walking, Sunning",Stockholm,Stockholm University,,0771-4988417,0278-6972857,
+13.0,Helena Östlund,Admirable,"Singing, Walking, Sunning",Gothenburg,Chalmers,0547-937838,0132-7970938,0130-952952,0880-945940
+25.0,Marion Scheffold,Awesome,"Singing, Walking",Gothenburg,Chalmers,0400-6986546,0846-6982784,0902-8964298,053-8947377
+26.0,Martin Fethi,First-class,"Baking, Baking",Umeå,Umeå Universitet,0361-4959111,030-4972264,0436-4931234,0528-3911939
+29.0,Nicole Michielsen,Best,"Baking, Baking",Västerås,Mälardalens Högskola,0364-6999415,0596-953150,0799-2912380,0705-1950468
+27.0,Max Lundin,First class,"Jogging, Running",Umeå,Umeå Universitet,0186-6917777,0274-1995188,064-979307,0285-7984490
+19.0,Kambal Sjöberg,Gorgeus,"Singing, Walking, Sunning",Umeå,Umeå Universitet,0136-6909147,0741-8946537,0353-5904093,0311-2915004
+22.0,Labinot Muhindo,Excellent,,Umeå,Umeå Universitet,0150-4955849,,0923-3976545,0588-6969907
+30.0,Nina Rujkovcani,Eksellent,"Singing, Walking, Sunning",Gothenburg,Chalmers,,0355-4961891,0593-1911946,0656-7936675
+35.0,Shirwac Odelius,Awessome,"Singing, Walking",Västerås,Mälardalens Högskola,079-2939353,0759-1983996,0842-3906374,0318-6968827
+31.0,Oskar Martens Abib,Eksellent,Jogging,Umeå,Umeå Universitet,0918-7973974,0203-3971965,0420-3936054,
+33.0,Robin Thidell,Awesome,"Jogging, Juggling, Math",Gothenburg,Chalmers,0154-5923609,,0315-1946611,0196-991524
+15.0,Jonas Sträng,Gorgeus,"Singing, Boxing",Västerås,Mälardalens Högskola,0145-3943054,0690-2983929,089-6994349,0951-7937335
+4.0,Andreas Sjöden,Awessome,"Running, Singing",Stockholm,Stockholm University,0311-4915062,030-1943022,0791-4939294,0760-916391
+11.0,Gabriella Wadin,Profound,,Umeå,Umeå Universitet,0611-7942634,0331-8988903,,0335-1918744
+10.0,Fredrik Hedesand,Gorgetus,Jogging,Umeå,Umeå Universitet,0992-3905634,0918-8917080,0757-3987360,0661-8980809
+5.0,Anna Karlsson,Gorgetus,"Jogging, Juggling, Math",Umeå,Umeå Universitet,0942-6914356,0118-5951796,040-2960212,0978-1956910
+27.0,Max Lundin,First class,"Jogging, Running",Västerås,Mälardalens Högskola,0554-2906402,053-5996853,0561-4969734,0326-1983913
+36.0,Sofia Andrén,Gorgetus,"Jogging, Juggling, Math",Umeå,Umeå Universitet,0848-5960702,0256-2974038,,0172-4922882
+16.0,Jonathan Montgomery,Awessome,Jogging,Västerås,Mälardalens Högskola,0267-7977156,0502-4919585,0214-3993013,0512-8927325
+3.0,Amir Birgersson,Excellent,Walking,Västerås,Mälardalens Högskola,0426-1901115,0963-950193,0208-3988552,0901-4953427
+7.0,Denise Honein,Awessome,"Singing, Walking, Sunning",Gothenburg,Chalmers,0767-4925890,0590-7981844,0241-8945681,0654-4964165
+14.0,Joakim Etzell,First-class,"Jogging, Running",Västerås,Mälardalens Högskola,0371-7993767,0778-6965870,,050-8988413
+20.0,Karin Olsson,Best,Nothing,Stockholm,Stockholm University,0757-4916323,0936-900955,0541-8924853,
+9.0,Filip Mathsson,Best,Singing,Västerås,Mälardalens Högskola,0105-7980592,0619-950165,0680-6948260,0163-3934592
+24.0,Luliya Casperson,First-class,Baking,Stockholm,Stockholm University,0662-1994444,0736-7939021,0382-6995724,
+38.0,Yaffet Kahsay,Admirable,"Singing, Boxing",Gothenburg,Chalmers,0591-7900335,0276-5900300,0395-909606,0894-7991387
+2.0,Amanda Masfun,Profound,Walking,Västerås,Mälardalens Högskola,064-4966908,0410-3956335,0285-3934723,0350-5972228
+18.0,Julio Andrae,Awesome,Walking,Gothenburg,Chalmers,0771-6991808,03-1965083,0538-8944878,
+32.0,Rami Sami,Awessome,,Västerås,Mälardalens Högskola,050-4936853,0216-1911906,0974-4973257,0160-2963428
+39.0,Yiming Fu,Firstclass,"Singing, Walking, Sunning",Umeå,Umeå Universitet,013-5956554,0235-3986261,,0467-7946471
+21.0,Karl Siklander,Awessome,Nothing,Umeå,Umeå Universitet,0588-6936152,0631-5995571,0664-5981255,0313-7977261
+5.0,Anna Karlsson,Gorgetus,"Jogging, Juggling, Math",Gothenburg,Chalmers,0450-901505,,080-1909145,0819-2984928
+6.0,Anne Södergren,Awessome,"Jogging, Juggling, Math",Västerås,Mälardalens Högskola,0747-8944886,0856-3937719,059-3971713,0940-2965889
