@@ -16,7 +16,7 @@ docker start DockerContainer
 docker cp denormalized-data.csv DockerContainer:/var/lib/mysql-files
 winpty docker exec -i DockerContainer mysql -uiths -piths < normalisering.sql
 
-winpty docker exec -it DockerConatainer bash
+winpty docker exec -it DockerContainer bash
 ```
 
 ## Container
