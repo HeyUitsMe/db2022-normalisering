@@ -14,14 +14,14 @@ cd db2022-normalisering/
 docker ps
 docker start DockerContainer
 docker cp denormalized-data.csv DockerContainer:/var/lib/mysql-files
-winpty docker exec -i DockerContainer mysql -uiths -piths < normalisering.sql
+winpty docker exec -i DockerContainer mysql -uroot -proot < normalisering.sql
 
 winpty docker exec -it DockerContainer bash
 ```
 
 ## Container
 ```bash
-mysql -piths -uiths
+mysql -proot -uroot
 ```
 
 ## MySQL
