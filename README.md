@@ -12,11 +12,11 @@ Git Bash
 git clone https://github.com/HeyUitsMe/db2022-normalisering.git
 cd db2022-normalisering/
 docker ps
-docker start docker-container
-docker cp denormalized-data.csv container-with-mysql:/var/lib/mysql-files
-docker exec -i docker container mysql -uiths -piths < normalisering.sql
+docker start DockerContainer
+docker cp denormalized-data.csv DockerContainer:/var/lib/mysql-files
+winpty docker exec -i DockerContainer mysql -uiths -piths < normalisering.sql
 
-winpty docker exec -it iths-mysql bash
+winpty docker exec -it DockerConatainer bash
 ```
 
 ## Container
